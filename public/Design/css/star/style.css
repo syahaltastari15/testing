@@ -1,0 +1,119 @@
+.rating
+{
+
+justify-content: center;
+position: absolute;
+transform: translate(143%,-40%) rotateY(180deg);
+display: flex;
+
+
+}
+
+.rating input
+{
+    display: none;
+
+
+}
+
+.rating label
+{
+    display: block;
+    cursor: pointer;
+    width: 60px;
+    background: white;
+
+}
+
+.rating label:before
+{
+    content: '\f005';
+    font-family: fontAwesome;
+    font-weight: 900;
+    position: relative;
+    display: block;
+    font-size: 40px;
+    color: #ecf0f1;
+
+}
+
+.rating label:after
+{
+    content: '\f005';
+    font-family: fontAwesome;
+    font-weight: 900;
+    position: absolute;
+    display: block;
+    font-size: 40px;
+    color: #f1c40f;
+    top:0;
+    opacity: 0;
+    transition: .5s;
+    text-shadow: 0 2px 5px rgba(0,0,0,.5);
+}
+
+/* .rating label:hover:after, */
+.rating input:checked ~ label:after
+{
+    opacity: 1;
+}
+
+/* --------------------------------------- */
+
+.rate
+{
+
+position: absolute;
+transform: rotateY(180deg);
+display: flex;
+padding-bottom: 2px;
+
+}
+
+.rate input
+{
+    display: none;
+
+}
+
+.rate label
+{
+    display: block;
+    cursor: pointer;
+    width: 50px;
+    background: white;
+
+}
+
+.rate label:before
+{
+    content: '\f005';
+    font-family: fontAwesome;
+    font-weight: 900;
+    position: relative;
+    display: block;
+    font-size: 25px;
+    color: #ecf0f1;
+
+}
+
+.rate label:after
+{
+    content: '\f005';
+    font-family: fontAwesome;
+    font-weight: 900;
+    position: absolute;
+    display: block;
+    font-size: 25px;
+    color: #f1c40f;
+    top:0;
+    opacity: 0;
+    transition: .5s;
+    text-shadow: 0 2px 5px rgba(0,0,0,.5);
+}
+
+.rate label:hover:after,
+.rate input:checked ~ label:after
+{
+    opacity: 1;
+}

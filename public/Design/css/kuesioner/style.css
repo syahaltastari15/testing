@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+body{
+	font-family: Poppins-Regular, sans-serif;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: #9053c7;
+  background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: -o-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: -moz-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+}
+
+.inputnama-content {
+  background: #fff;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  padding: 50px 85px;
+}
+
+.radio {
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  margin: 1px; 
+}
+
+.h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 35px;
+}
+
+.h2 {
+  font-family: 'playfair-display', serif; 
+  font-size: 35px;
+}
+
+
+.label-index {
+  font-family: Work Sans;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.form-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 45px;
+  font-style: bold;
+}
+
+.form-input {
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  width: 90%;
+  border: 3px solid #ebebeb;
+  outline-style: none;
+  outline: none;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.form-star {
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  width: 90%;
+  border: 3px solid #ebebeb;
+  border-radius: 5px;
+  outline-style: none;
+  outline: none;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+/*event*/
+.form-group {
+	width: 100%;
+}
+/*radio btn*/
+.info-group {
+  width: -webkit-calc(100%);
+  width: -moz-calc(100%);
+  width: calc(100%);
+}
+
+@media (max-width: 767px) {
+  .info-group {
+    width: 100%;
+  }
+}
+/*textbox lainnya*/
+.form-lain {
+  font-family: 'Nunito', sans-serif;
+  width: 50%;
+  border: 3px solid #ebebeb;
+  outline-style: none;
+  outline: none;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  font-size: 18px;
+  font-weight: 500;
+}
+}
+/*btn submit*/
+.btn {
+  line-height: 30px;
+  padding: 0 35px;
+  cursor: pointer;
+  background: #4272d7;
+  font-size: 30px;
+  color: #fff;
+  font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+}
+
+.btn--radius {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.btn--radius-2 {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+fieldset, label { margin: 0; padding: 0; }
+body{ margin: 20px; }
+h1 { font-size: 1.5em; margin: 10px; }
+
+/****** Style untuk star *****/
+
+.star {
+  height: 50%;
+  width: 50%;
+  border: none;
+  float: left;
+}
+
+.star > input { display: none; }
+.star > label:before {
+  margin: 5px;
+  font-size: 50px;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+  text-align: center;
+}
+
+.star > .half:before {
+  content: "\f089";
+  position: absolute;
+}
+
+.star > label {
+  color: #ddd;
+ float: right;
+}
+
+/***** CSS untuk hover nya *****/
+
+.star > input:checked ~ label, /* memperlihatkan warna emas pada saat di klik */
+.star:not(:checked) > label:hover, /* hover untuk star berikutnya */
+.star:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover untuk star sebelumnya  */
+
+.star > input:checked + label:hover, /* hover ketika mengganti star */
+.star > input:checked ~ label:hover,
+.star > label:hover ~ input:checked ~ label, /* seleksi hover */
+.star > input:checked ~ label:hover ~ label { color: #FFED85;  }
+
