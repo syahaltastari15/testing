@@ -1,0 +1,70 @@
+/*landing page*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+body{
+    background: url('/Design/image/preview.jpg') no-repeat scroll;
+    background-size: 100% 100%;
+    min-height: 800px;
+}
+
+.topnav {
+    background-color: #373a40;
+    overflow: hidden;
+  }
+
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .topnav a.active {
+    background-color: #6a2c70;
+    color: white;
+  }
+
+  .selamat-datang{
+    font-family: 'Playfair Display', serif;
+    color: #1a1c20;
+    font-size: 50px;
+    font-style: bold;
+  }
+
+  .welcome{
+    font-family: 'Nunito', sans-serif;
+    color: #1a1c20;
+    font-size: 30px;
+  }
+
+  .btn {
+    float: right;
+    line-height: 40px;
+    padding: 0 45px;
+    cursor: pointer;
+    background: #4272d7;
+    font-size: 24px;
+    color: #fff;
+    font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+    margin-right: 200px;
+  }
+
+  .btn--radius {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+
+  .btn--radius-2 {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+  }
